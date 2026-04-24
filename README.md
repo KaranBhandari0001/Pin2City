@@ -137,4 +137,4 @@ MIT License
 
 ## ⭐ Support
 
-If you found this useful, consider giving it a ⭐ on GitHub!
+If you found this useful, consider giving it a ⭐ on GitHub !
