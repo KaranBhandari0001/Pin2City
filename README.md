@@ -16,6 +16,20 @@ While working on online order processing and data entry, I constantly faced one 
 
 So instead of wasting time, I built **Pin2City** to solve this problem for myself — and for anyone facing the same issue.
 
+This is currently the **first version (v1.0)** of the extension.
+I created this initial version to make my daily work faster and easier.
+
+In future updates, I plan to make it much more powerful and fully useful with advanced features like:
+
+* Auto-detect pincode from web pages
+* One-click autofill in shipping forms
+* Better accuracy for shipping city detection
+* Bulk paste support
+* Improved UI/UX
+* More smart automation features
+
+This is just the beginning 🚀
+
 ---
 
 ## ✨ Features
@@ -69,7 +83,7 @@ Done ✅
 
 ## 📁 Project Structure
 
-```
+```text
 pin2city/
 │── manifest.json
 │── popup.html
@@ -104,6 +118,8 @@ pin2city/
 * One-click autofill in forms
 * Bulk paste support
 * Dark mode UI
+* Better shipping city accuracy
+* Multi-API fallback system
 
 ---
 
