@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pin2City</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <h2>📍 Pin2City</h2>
+
+  <div class="input-group">
+    <input type="text" id="pincode" placeholder="Enter Pincode">
+    <button class="add-btn" id="addBtn">Add</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>City</th>
+        <th>State</th>
+        <th>Pincode</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <div class="actions">
+    <button class="clear-btn" id="clearBtn">Clear</button>
+    <button class="download-btn" id="downloadBtn">Download</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
