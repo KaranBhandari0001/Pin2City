@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 340px;
+  padding: 15px;
+  background: #f4f6f8;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #e0e0e0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 48%;
+}
+
+.clear-btn {
+  background: #f44336;
+  color: white;
+}
+
+.download-btn {
+  background: #2196F3;
+  color: white;
+}
