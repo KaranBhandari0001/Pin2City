@@ -2,6 +2,8 @@
 
 Pin2City is a simple and powerful browser extension that helps you instantly convert Indian pincodes into their corresponding **shipping city and state**.
 
+Now with **Right Click Save Feature**, you can directly select a pincode from any webpage (like WhatsApp Web) and save it instantly without manual copy-paste.
+
 No more switching tabs or searching Google again and again.
 
 ---
@@ -10,25 +12,20 @@ No more switching tabs or searching Google again and again.
 
 While working on online order processing and data entry, I constantly faced one annoying problem:
 
-👉 Every time I had a pincode, I had to manually search on Google to find the **city and state**
-👉 This process was repetitive and time-consuming
-👉 It slowed down my workflow significantly
+👉 Every time I had a pincode, I had to manually copy it
+👉 Then open the extension
+👉 Paste the pincode manually
+👉 Then search for the city and state
+
+This process was repetitive, slow, and time-consuming.
 
 So instead of wasting time, I built **Pin2City** to solve this problem for myself — and for anyone facing the same issue.
 
-This is currently the **first version (v1.0)** of the extension.
-I created this initial version to make my daily work faster and easier.
+The first version (v1.0) was based on manual pincode input.
 
-In future updates, I plan to make it much more powerful and fully useful with advanced features like:
+Now this is the **second version (v2.0)** with a much faster workflow using **Right Click → Add to Pin2City**.
 
-* Auto-detect pincode from web pages
-* One-click autofill in shipping forms
-* Better accuracy for shipping city detection
-* Bulk paste support
-* Improved UI/UX
-* More smart automation features
-
-This is just the beginning 🚀
+This version makes daily order processing much faster and smoother.
 
 ---
 
@@ -37,11 +34,14 @@ This is just the beginning 🚀
 * 🔍 **Instant Pincode Lookup**
   Get city and state in one click
 
-* ➕ **Bulk Add Pincodes**
-  Add multiple pincodes to a list
+* 🖱️ **Right Click Save (NEW in v2.0)**
+  Select any pincode on a webpage and save it directly using right click
+
+* ➕ **Bulk Pincode Collection**
+  Save multiple pincodes while browsing without opening the popup again and again
 
 * 📋 **Live Data Table**
-  View all results in a clean table
+  View all saved results in a clean table
 
 * ❌ **Duplicate Prevention**
   Avoid adding the same pincode twice
@@ -64,6 +64,8 @@ This is just the beginning 🚀
 * CSS
 * JavaScript
 * Browser Extension API
+* Context Menu API
+* Chrome Storage API
 * Public Pincode API
 
 ---
@@ -89,17 +91,31 @@ pin2city/
 │── popup.html
 │── popup.css
 │── popup.js
+│── background.js
+│── icons/
 ```
 
 ---
 
 ## ⚡ How to Use
 
-1. Enter a pincode
-2. Click **Add**
-3. View results in the table
-4. Add multiple entries
-5. Click **Download** to export data
+### Method 1 — Right Click Save (Recommended)
+
+1. Open WhatsApp Web or any webpage
+2. Select a pincode like `121006`
+3. Right Click
+4. Click **Add to Pin2City**
+5. Open extension popup
+6. Download CSV
+
+---
+
+### Method 2 — Manual Add (v1 Method)
+
+1. Copy pincode manually
+2. Open extension
+3. Paste and Add
+4. Export CSV
 
 ---
 
@@ -107,6 +123,7 @@ pin2city/
 
 * E-commerce order processing
 * Logistics & shipping work
+* WhatsApp order management
 * Data entry tasks
 * Bulk pincode lookup
 
@@ -114,12 +131,15 @@ pin2city/
 
 ## 💡 Future Improvements
 
-* Auto-detect pincode from web pages
-* One-click autofill in forms
+* Full address extractor (Name + Address + Phone + Pincode)
+* One-click autofill in shipping forms
 * Bulk paste support
-* Dark mode UI
 * Better shipping city accuracy
+* Dark mode UI
 * Multi-API fallback system
+* Smart automation features
+
+This is just the beginning 🚀
 
 ---
 
@@ -137,4 +157,4 @@ MIT License
 
 ## ⭐ Support
 
-If you found this useful, consider giving it a ⭐ on GitHub !
+If you found this useful, consider giving it a ⭐ on GitHub!
